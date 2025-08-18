@@ -3,42 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stellar Solution</title>
+    <title>Stellar Solutions - Home</title>
 </head>
-<body id="home-page"> <!--Page specific id-->
-    <h1>Welcome to Stellar Solution</h1> <!--Main header-->
+<body id="home page"> <!--Page Specific Id-->
 
-    <!--Header Section-->
-    <header id="Main header">
-        <h1>Welcome to Stellar Solutions</h1>
+<!--Header Section-->
+<header id="main header">
+<h1>Welcome to Stellar Solutions</h1>
 
-    <!--Navigation Menue-->
-    <nav id="Main View">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="#contact">Contact</a>
+<!--Navigation Menue-->
+<nav id="main view">
+<a href="Index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="#contact">Contact</a> <!--Internal link to the contact section-->
+</nav>
 
-    </nav>
-    </header>
+</header>
 
-    <hr>
+<hr>
 
-    <!--Introduction Section-->
-    <section id="intro-section"> 
-    <h2>Your Partner in innovation </h2>
-    <p>
-        at Steller Solutions, we provide <strong>cutting-edge</strong> solutions for modern businesses,
-        from software development to <em>creative design</em>, out team is dedicated to excellence.
-    </p>
+<!--Introduction Section-->
+<section id="intro-section">
+<h2>Your Partner In Innovation</h2> <!--Section Heading-->
+<p>
+    <!--Image Representing Teamwork-->
+    <img src="Images/Teamwork.jpg"
+    alt="Team Working Together on a Project."
+    style="max-width: 100%; height: auto;"> <!--Ensures image scales responsively-->
+</p>
+</section>
 
-    <!--Image representing teamwork-->
-    <img src="teamwork (2).jpg"
-    alt="Team working together on a project."
-    style="max-width: 100%; height: auto;"> <!--Ensures image scales -->
-    </section>
+<hr>
 
-    <hr>
+<!--Contact section-->
+<section id="contact-section">
+    <h2>Get in touch</h2>
+    <p>Have a project in mind? Fill out our contact form below and we will get back to you!</p>
 
-   
+    <!--Contact form-->
+    <form id="contact form"action="/submit-contact"method="post">
+    <label for="email">Your email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Your message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="5"required></textarea><br><Br>
+    <input type="submit"value="send">
+    </form>
+
+
+<hr>
+
+<!--Iframe for maps-->
+<h3>find us here</h3>
+<iframes
+id="location map"
+src="https://www.google.com/maps/place/The+IIE's+Varsity+College+-+Pietermaritzburg/@-29.6344953,30.3459443,13z/data=!4m6!3m5!1s0x1ef6bc4f1e7c8603:0x6f24436d4e06e7dc!8m2!3d-29.6120624!4d30.4058914!16s%2Fg%2F1td3btwg?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D"
+width="600"
+height="450"
+style="border: 0;"
+allowfullscreen=""
+loading="lazy">
+</iframes>
+</section>
+
+<hr>
+
+
+
 </body>
 </html>
